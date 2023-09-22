@@ -4,17 +4,17 @@ body {
   margin: 0;
   background-color: rgb(114, 111, 94);
   height: 100vh;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-family: 'Roboto', sans-serif;
 }
 #library {
   width: fit-content;
-  border: 1px solid red;
   display: grid;
+  margin: 10rem auto;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
 .book {
   background-color: white;
@@ -36,10 +36,15 @@ body {
 
 form {
   position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%,-50%);
   z-index: 3;
-  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  margin: auto;
+  background-color: rgb(244, 244, 244);
   border-radius: 5rem;
-  padding: 15rem 5rem;
+  padding: 15rem 2rem;
   display: none;
   align-items: center;
   gap: 2rem;
@@ -68,4 +73,12 @@ input {
 .warning{
   color: red;
   display: none;
+}
+
+.bookCard{
+  width: 20rem;
+  height: 28rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 2rem;
 }
