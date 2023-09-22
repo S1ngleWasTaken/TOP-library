@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
+html {
   margin: 0;
   background-color: rgb(114, 111, 94);
   height: 100vh;
@@ -81,4 +81,7 @@ input {
   text-align: center;
   background-color: white;
   border-radius: 2rem;
+}
+.read{
+  
 }

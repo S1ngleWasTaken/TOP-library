@@ -47,26 +47,17 @@ let addBook = function () {
 }
 
 let createLibrary = function () {
-    // library.forEach(book =>{
-    //     let div = document.createElement('div');
-    //     let h1 = document.createElement('h1');
-    //     let h2 = document.createElement('h2');
-    //     let title = document.createTextNode(book.title);
-    //     let author = document.createTextNode(book.author);
-    //     h1.appendChild(title);
-    //     h2.appendChild(author);
-    //     div.append(h1, h2)
-    //     div.classList.add('bookCard')
-    //     libraryDiv.appendChild(div)
-    // })
     let div = document.createElement('div');
     let h1 = document.createElement('h1');
     let h2 = document.createElement('h2');
+    let checkbox = document.createElement('input');
+    checkbox.setAttribute('type', 'checkbox')
+    checkbox.checked = library[library.length-1].read;
     let title = document.createTextNode(library[library.length-1].title);
     let author = document.createTextNode(library[library.length-1].author);
     h1.appendChild(title);
     h2.appendChild(author);
-    div.append(h1, h2)
+    div.append(h1, h2, checkbox)
     div.classList.add('bookCard')
     libraryDiv.appendChild(div)
 }
